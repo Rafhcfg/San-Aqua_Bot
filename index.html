@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SanAqua Chat</title>
+
+  <!-- Script oficial do Dialogflow -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+
+    df-messenger {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      --df-messenger-button-titlebar-color: #007AFF;
+      --df-messenger-chat-background-color: #ffffff;
+      --df-messenger-user-message: #e6e6e6;
+      --df-messenger-bot-message: #007AFF;
+    }
+
+    df-messenger::part(chat-container) {
+      box-shadow: none !important;
+      border-radius: 0 !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <df-messenger
+    intent="WELCOME"
+    chat-title="SanAqua"
+    agent-id="6a1e8d7a-2a6e-4c2c-8cd8-09770dc113ed"
+    language-code="pt">
+  </df-messenger>
+
+</body>
+</html>
